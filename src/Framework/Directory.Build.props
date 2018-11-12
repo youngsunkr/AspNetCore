@@ -18,7 +18,6 @@
     <OutputPath>$(RepositoryRoot)bin\fx\$(SharedFxRid)\$(MSBuildProjectName)\</OutputPath>
     <BaseIntermediateOutputPath>$(RepositoryRoot)obj\fx\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
 
-    <CrossgenOutput Condition="'$(SharedFxRid)' == 'linux-arm'">false</CrossgenOutput>
     <CrossgenSymbolsOutput Condition=" '$(CrossgenOutput)' == 'false' OR '$(SharedFxRid)' == 'osx-x64'">false</CrossgenSymbolsOutput>
 
     <IncludeSymbols>true</IncludeSymbols>
